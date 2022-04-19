@@ -26,6 +26,10 @@ namespace BaseAI
         /// </summary>
         public float jumpLength;
         /// <summary>
+        /// Время прыжка - предварительно рассчитать!
+        /// </summary>
+        public float jumpTime;
+        /// <summary>
         /// Сила прыжка
         /// </summary>
         public float jumpForce;
@@ -36,7 +40,7 @@ namespace BaseAI
         /// <summary>
         /// Дельта времени (шаг по времени), с которой строится маршрут
         /// </summary>
-        public float deltaTime = 0.5f;
+        public float deltaTime = 1f;
         /// <summary>
         /// Шаг по пространству, с которым происходит дискретизация области (для отсечения посещённых точек)
         /// </summary>
